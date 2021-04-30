@@ -490,7 +490,10 @@ Note that on iOS this method isn't called when using `keyboardType="phone-pad"`.
 
 ### `onTextInput`
 
-Callback that is called on new text input with the argument `{ nativeEvent: { text, previousText, range: { start, end } } }`. This prop requires `multiline={true}` to be set.
+使用光标在某位置输入文本时的回调 { nativeEvent: { text, previousText, range: { start, end } } }。
+range为本次(从打字到选词，TextInput出现文本)输入后光标的改变范围，如果是直接插入, 不管选词时长度是多长range.start 和 range.end 都相等，返回的是光标开始插入文本时的位置，若要获取光标输入后的位置请使用 onSelectionChange()方法；如果是覆盖插入(替换某些文本)或直接删除某些文本 range.start 和 range.end 对应光标的改变范围。
+text为本次输入新增的文本。
+previousText为删除的文本。
 
 | 类型     | Required |
 | -------- | -------- |
