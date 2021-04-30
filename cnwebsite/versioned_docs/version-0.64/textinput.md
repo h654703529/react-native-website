@@ -491,7 +491,7 @@ Note that on iOS this method isn't called when using `keyboardType="phone-pad"`.
 ### `onTextInput`
 
 使用光标在某位置输入文本时的回调 `{ nativeEvent: { text, previousText, range: { start, end } } }`。
-`range`为光标位置信息（不能直接作为光标位置 获取光标位置请参考 `onSelectionChange`）。
+`range`为光标位置信息（不能直接作为光标位置，获取光标位置请参考 `onSelectionChange`）。
 `text`为本次输入新增的文本。
 `previousText`为本次删除的文本。
 
