@@ -530,7 +530,7 @@ Sets the return key to the label. Use it instead of `returnKeyType`.
 
 ### `returnKeyType`
 
-决定“确定”按钮显示的内容。在 Android 上你还可以使用`returnKeyLabel`。
+决定“确定”按钮显示的内容。
 
 下列这些选项是跨平台可用的：
 
