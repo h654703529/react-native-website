@@ -520,7 +520,8 @@ Callback that is called on new text input with the argument `{ nativeEvent: { te
 
 ### `returnKeyLabel`
 
-Sets the return key to the label. Use it instead of `returnKeyType`.
+可能只存在少数特定安卓版本中。
+
 
 | 类型   | 必需 | 平台    |
 | ------ | ---- | ------- |
